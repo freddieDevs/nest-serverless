@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "source": "index.ts",
+    "use": "@vercel/node"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "src/index.ts"
+    }
+  ]
+}
