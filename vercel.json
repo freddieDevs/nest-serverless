@@ -1,14 +1,15 @@
 {
   "functions": {
-    "api/index.ts": {
+    "api/serverless/handler.ts": {
       "memory": 1024,
       "maxDuration": 60
     }
   },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/index.ts"
+      "src": "/(.*)",
+      "dest": "dist/api/handler.js",
+      "methods": [ "GET", "POST", "PUT", "PATCH", "DELETE" ]
     }
   ]
 }

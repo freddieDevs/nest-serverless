@@ -71,5 +71,5 @@
   "engines": {
     "@vercel/node": "18"
   },
-  "main": "dist/index.js"
+  "main": "dist/api/handler.js"
 }
