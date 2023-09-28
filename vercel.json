@@ -1,7 +1,9 @@
 {
   "functions": {
-    "source": "index.ts",
-    "use": "@vercel/node"
+    "index.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
   },
   "routes": [
     {
